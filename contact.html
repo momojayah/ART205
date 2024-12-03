@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jayah Swaray</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Function to open the picture modal with more information
+        function openPictureModal() {
+            document.getElementById("picture-modal").style.display = "flex";
+        }
+
+        // Function to close the picture modal
+        function closePictureModal() {
+            document.getElementById("picture-modal").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <div class="profile">
+                <img src="profile.jpg" alt="Jayah Swaray" class="profile-picture" onclick="openPictureModal()">
+            </div>
+            <h2>Jayah Swaray</h2>
+            <p>I am a student at Starz University studying Information Technology, emphasis in System Administration. I have a strong background in Networking. I also work at Starz University Labs.</p>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> <a href="mailto:jayahswaray2@gmail.com">jayahswaray2@gmail.com</a></p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Location:</strong> 72nd Boulevard, Paynesville City</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jayah Swaray</p>
+    </footer>
+
+    <!-- Picture Modal with More Information -->
+    <div id="picture-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closePictureModal()">&times;</span>
+            <div class="modal-header">
+                <img src="profile.jpg" alt="Jayah Swaray" class="modal-picture">
+                <div class="modal-info">
+                    <h2>About Me</h2>
+                    <p><strong>Name:</strong> Jayah Swaray</p>
+                    <p><strong>Field of Study:</strong> Information Technology (System Administration)</p>
+                    <p><strong>Background:</strong> Strong knowledge in Networking</p>
+                    <p><strong>Current Work:</strong> Starz University Labs</p>
+                    <p>I am passionate about networking and technology. I aim to make a significant impact in the field of System Administration and contribute to innovative IT solutions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
